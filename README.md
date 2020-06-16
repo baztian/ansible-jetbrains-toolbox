@@ -1,7 +1,7 @@
 ansible jetbrains toolbox role
 ==============================
 
-![CI](https://github.com/baztian/ansible-jetbrains-toolbox/workflows/CI/badge.svg
+![CI](https://github.com/baztian/ansible-jetbrains-toolbox/workflows/CI/badge.svg)
 
 Role to download, install and setup git plus associated tools.
 
