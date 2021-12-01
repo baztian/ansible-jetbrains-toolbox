@@ -10,10 +10,13 @@ driver:
       ansible_connection: local
 platforms:
   - name: instance
-    image: "geerlingguy/docker-${MOLECULE_DISTRO:-ubuntu2004}-ansible:latest"
-    pre_build_image: true
+    image: "docker-${MOLECULE_DISTRO:-ubuntu2004}-ansible:latest"
 provisioner:
   name: ansible
   log: True
+  inventory:
+    host_vars:
+      instance:
+        ansible_user: ansible
 verifier:
   name: ansible
