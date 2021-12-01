@@ -15,6 +15,7 @@
     src: /tmp/jetbrains-toolbox-{{ jetbrains_toolbox_version }}.tar.gz
     dest: /tmp
     remote_src: yes
+  become: no
   when: not jetbrains_toolbox_bin.stat.exists
 - name: Create Toolbox bin directory
   file:
