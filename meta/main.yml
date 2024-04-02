@@ -3,11 +3,10 @@ galaxy_info:
   role_name: jetbrains_toolbox
   description: Role for installing jetbrains toolbox
   license: MIT
-  min_ansible_version: 2.0
+  min_ansible_version: '2.0'
   platforms:
   - name: Ubuntu
     versions:
     - focal
   galaxy_tags:
     - git
-dependencies: []
