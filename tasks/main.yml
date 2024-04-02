@@ -6,7 +6,7 @@
   become: no
 - name: Download JetBrains Toolbox
   get_url:
-    url: https://download.jetbrains.com/toolbox/jetbrains-toolbox-{{ jetbrains_toolbox_version }}.tar.gz
+    url: https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-{{ jetbrains_toolbox_version }}.tar.gz
     checksum: "sha256:{{ jetbrains_toolbox_sha256 }}"
     dest: /tmp/
   when: not jetbrains_toolbox_bin.stat.exists
