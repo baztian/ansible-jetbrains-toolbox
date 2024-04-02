@@ -27,6 +27,7 @@
 - name: Move JetBrains Toolbox binary
   command: mv /tmp/jetbrains-toolbox-{{ jetbrains_toolbox_version }}/jetbrains-toolbox ~/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox
   become: no
+  changed_when: False
   when: not jetbrains_toolbox_bin.stat.exists
 - name: Create launcher directory
   file:
